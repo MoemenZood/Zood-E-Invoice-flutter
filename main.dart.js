@@ -39471,7 +39471,7 @@ return A.H(A.FG("lang"),$async$aja)
 case 3:p.w=b
 q=$.bY.cF()
 q.w=$.bY.cF().w.length===0?"en":$.bY.cF().w
-$.bY.cF().c="https://zood.ai/api/v1"
+$.bY.cF().c="https://api.zood.ai/api/v1"
 $.bY.cF()
 $.bY.cF()
 return A.q(null,r)}})
