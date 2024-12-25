@@ -204310,7 +204310,7 @@ r=o.b
 if(r==null)r=""
 q=s+" "+r}else q=""
 s=t.N
-p=A.P(["Authorization",q,"Access-Control-Expose-Headers","*","Content-Type","application/json; charset=utf-8","Accept","*/*","Access-Control-Allow-Origin","https://zood-e-invoice.netlify.app","Access-Control-Allow-Credentials","true","Access-Control-Allow-Headers","Accept,Accept-Language,Content-Type,Authorization,X-Requested-With,X-HTTP-Method-Override,Access-Control-Request-Headers,Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials","Access-Control-Allow-Methods","GET, DELETE, HEAD, OPTIONS ,POST"],s,s)
+p=A.P(["Authorization",q,"Access-Control-Expose-Headers","*","Content-Type","application/json; charset=utf-8","Accept","*/*","Access-Control-Allow-Origin","https://zood-e-invoice.netlify.app,https://api.zood.ai","Access-Control-Allow-Credentials","true","Access-Control-Allow-Headers","Accept,Accept-Language,Content-Type,Authorization,X-Requested-With,X-HTTP-Method-Override,Access-Control-Request-Headers,Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials","Access-Control-Allow-Methods","GET, DELETE, HEAD, OPTIONS ,POST"],s,s)
 A.nu(p)
 return p}}
 A.IS.prototype={
