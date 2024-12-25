@@ -1,0 +1,57 @@
+/* Make the chat container take up the full screen */
+.vfrc-chat--overlay {
+  position: fixed; /* Fixed position to cover the full viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  z-index: 9999; /* Ensure it appears on top of other content */
+  background-color: white; /* Optional: customize the background */
+}
+
+/* Ensure the chat header and footer adjust on mobile */
+.vfrc-header,
+.vfrc-footer {
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Remove margins and paddings for a clean look */
+.vfrc-chat--dialog,
+.vfrc-message,
+.vfrc-input {
+  margin: 0;
+  padding: 0;
+}
+
+/* Adjust input field to span full width */
+.vfrc-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Override styles for smaller screens */
+  .vfrc-chat--overlay {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0; /* Remove rounded corners */
+  }
+
+  /* Adjust font size and padding for readability */
+  .vfrc-message {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .vfrc-input {
+    font-size: 14px;
+  }
+
+  .vfrc-header {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
