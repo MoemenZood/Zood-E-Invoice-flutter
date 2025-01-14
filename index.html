@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!--
+  <head>
+    <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
 
@@ -14,69 +14,66 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="/">
+    <base href="/" />
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="description" content="A new Flutter project." />
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="zood_lite">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="zood_lite" />
+    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
 
-  <title>zood_lite</title>
-  <link rel="manifest" href="manifest.json">
+    <title>zood_lite</title>
+    <link rel="manifest" href="manifest.json" />
 
-  <meta http-equiv="cache-control" content="no-cache" />
-  <meta http-equiv="expires" content="0" />
-  <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
 
-  <style>
-    #loading-indicator {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      border: 2px solid #f3f3f3;
-      border-radius: 50%;
-      border-top: 2px solid #3380ff;
-      width: 20px;
-      height: 20px;
-      -webkit-animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
+    <style>
+      #loading-indicator {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 2px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 2px solid #3380ff;
+        width: 20px;
+        height: 20px;
+        -webkit-animation: spin 1s linear infinite;
       }
 
-      100% {
-        transform: rotate(360deg);
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
       }
-    }
 
-    body {
-      height: 1000vh !important;
-      position: static !important;
-      overscroll-behavior: none;
+      body {
+        height: 1000vh !important;
+        position: static !important;
+        overscroll-behavior: none;
+      }
 
+      flutter-view {
+        position: fixed !important;
 
-    }
+        max-width: 100vw !important;
+        max-height: 100vh !important;
+      }
 
-    flutter-view {
-      position: fixed !important;
-
-      max-width: 100vw !important;
-      max-height: 100vh !important;
-    }
-
-
-    /* Safari-specific CSS */
-    /*  @supports (-webkit-touch-callout: inherit) {
+      /* Safari-specific CSS */
+      /*  @supports (-webkit-touch-callout: inherit) {
       body {
         height: 10000vh !important;
       }
@@ -103,31 +100,31 @@
       }
     }
       */
-  </style>
+    </style>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
-<script type="text/javascript">
-   pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js";
-</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script type="text/javascript">
+      pdfjsLib.GlobalWorkerOptions.workerSrc =
+        "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js";
+    </script>
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '"2765875489"';
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+    <script>
+      // The value below is injected by flutter build, do not touch.
+      var serviceWorkerVersion = "3273503315";
+    </script>
+    <!-- This script adds the flutter initialization JS code -->
+    <script src="flutter.js" defer></script>
+  </head>
 
+  <body>
+    <div id="loading-indicator"></div>
+    <script>
+      window.scroll(0, window.document.body.scrollHeight);
+    </script>
 
-</head>
+    <div id="sunrise" style="color: brown"></div>
 
-<body>
-  <div id="loading-indicator"></div>
-  <script>window.scroll(0, window.document.body.scrollHeight);</script>
-
-  <div id="sunrise" style="color:brown;"></div>
-
-
-  <!-- <script>
+    <!-- <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
@@ -143,29 +140,27 @@
     });
   </script> -->
 
+    <!-- ############################### Solution Cach ############################### -->
 
-  <!-- ############################### Solution Cach ############################### -->
- 
+    <script
+      src="main.dart.js?version=3273503315"
+      type="application/javascript"
+    ></script>
 
-  <script src="main.dart.js?version="2765875489"" type="application/javascript"></script>
-
-
-  <script>
-    window.addEventListener('load', function (ev) {
- 
-      _flutter.loader.load({
-        entrypointUrl: "main.dart.js?v="2765875489"",
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function (engineInitializer) {
-          engineInitializer.initializeEngine().then(function (appRunner) {
-            appRunner.runApp();
-          });
-        }
+    <script>
+      window.addEventListener("load", function (ev) {
+        _flutter.loader.load({
+          entrypointUrl: "main.dart.js?v=3273503315",
+          serviceWorker: {
+            serviceWorkerVersion: serviceWorkerVersion,
+          },
+          onEntrypointLoaded: function (engineInitializer) {
+            engineInitializer.initializeEngine().then(function (appRunner) {
+              appRunner.runApp();
+            });
+          },
+        });
       });
-    });
-  </script>
-
-</body>
+    </script>
+  </body>
 </html>
